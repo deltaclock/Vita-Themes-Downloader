@@ -5,5 +5,5 @@ This script is clearly for practice.
 If someone can improve its effectiveness I'm open for suggestions ;)
 
 # Note
-The script will throw an error on the first run cuz the log.txt doesn't exist.
+The script will throw an error on the first run cuz the log.txt - logt.txt doesn't exist.
 Create one on your working dir if this bothers you.
