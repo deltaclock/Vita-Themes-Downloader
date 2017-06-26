@@ -1,5 +1,5 @@
 # Vita-Themes-Downloader
-Red Squirrel 's  themes downloader . VSTEMA coming soon..
+Red Squirrel 's  themes downloader . VSTEMA also added.
 
 This script is clearly for practice.
 If someone can improve its effectiveness I'm open for suggestions ;)
