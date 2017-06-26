@@ -21,7 +21,7 @@ cd ..
 id=$(head -n 1 id.txt)
 wget http://psv.altervista.org/theme.php?id=$id
 sed -n 's/.*<h2 style="margin:5px 0 0 0;">\(.*\)<\/h2>.*/\1/p' theme.php\?id\=$id >> log.txt
-rm id.txt theme.txt
+rm id.txt theme.txt theme.php\?id\=$id
 else
   exit
 fi
