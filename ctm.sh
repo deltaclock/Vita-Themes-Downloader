@@ -3,6 +3,7 @@ echo "Your last theme was :"
 cat log.txt
 truncate -s 0 log.txt
 echo "The NEW themes must greater than 20 or u will dl duplicates!!"
+echo "NOTE: the script will remove the themes folder with the previous themes,BACKUP THEM!"
 echo "Procced ? (Type y for yes)"
 read a
 if [ $a == y ]; then
@@ -15,6 +16,7 @@ for (( i=1; i<=$x; i++ )); do
   awk '{print "http://psv.altervista.org/download.php?id="$0}' id.txt >> theme.txt
   rm index.php\?p\=$i
 done
+rm -f -r themes/
 mkdir themes && cd themes
 wget --content-disposition -i ../theme.txt
 cd ..
