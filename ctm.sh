@@ -13,9 +13,9 @@ for (( i=1; i<=$x; i++ )); do
 
   wget http://psv.altervista.org/index.php?p=$i
   grep -Po '(?<=href=")[^"]*' index.php\?p\=$i | grep 'theme.php?id=' | cut -d "=" -f 2 >> id.txt
-  awk '{print "http://psv.altervista.org/download.php?id="$0}' id.txt >> theme.txt
   rm index.php\?p\=$i
 done
+awk '{print "http://psv.altervista.org/download.php?id="$0}' id.txt >> theme.txt
 rm -f -r themes/
 mkdir themes && cd themes
 wget --content-disposition -i ../theme.txt
