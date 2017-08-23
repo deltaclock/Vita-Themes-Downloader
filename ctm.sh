@@ -19,6 +19,7 @@ awk '{print "http://psv.altervista.org/download.php?id="$0}' id.txt >> theme.txt
 rm -f -r themes/
 mkdir themes && cd themes
 wget --content-disposition -i ../theme.txt
+rm uc?export*
 cd ..
 id=$(head -n 1 id.txt)
 wget http://psv.altervista.org/theme.php?id=$id
